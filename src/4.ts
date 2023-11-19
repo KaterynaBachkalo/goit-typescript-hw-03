@@ -45,7 +45,7 @@ class MyHouse extends House {
   }
 
   openDoor(key: Key): void {
-    if (this.key.getSignature === key.getSignature) {
+    if (this.key.getSignature() === key.getSignature()) {
       this.door = true;
     }
   }
